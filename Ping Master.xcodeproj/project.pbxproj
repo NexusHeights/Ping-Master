@@ -60,10 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				371A43381CB2130500FCA746 /* Ping */,
-				3710E2711CB0791000786B1D /* DeviceListController.swift */,
 				3710E2731CB0796900786B1D /* AddDeviceViewController.swift */,
+				3710E2711CB0791000786B1D /* DeviceListController.swift */,
 			);
 			name = "Devices Tab";
+			path = "Devices Tab";
 			sourceTree = "<group>";
 		};
 		3710E2701CB078DB00786B1D /* Settings Tab */ = {
@@ -72,6 +73,7 @@
 				375F35741CAEF52A000E46F3 /* SettingsController.swift */,
 			);
 			name = "Settings Tab";
+			path = "Settings Tab";
 			sourceTree = "<group>";
 		};
 		371A43331CB2127A00FCA746 /* GBPing */ = {
@@ -86,6 +88,7 @@
 				371A43391CB21F6300FCA746 /* Ping Master-Bridging-Header.h */,
 			);
 			name = GBPing;
+			path = GBPing;
 			sourceTree = "<group>";
 		};
 		371A43381CB2130500FCA746 /* Ping */ = {
@@ -94,6 +97,7 @@
 				3710E2751CB0798A00786B1D /* PingViewController.swift */,
 			);
 			name = Ping;
+			path = Ping;
 			sourceTree = "<group>";
 		};
 		37F47A091CB1D8210035FA9F /* Data Source */ = {
@@ -102,6 +106,7 @@
 				37F47A0A1CB1D8320035FA9F /* Device.swift */,
 			);
 			name = "Data Source";
+			path = "Data Source";
 			sourceTree = "<group>";
 		};
 		37F6BBD71CCEB64700796042 /* Extensions */ = {
@@ -111,6 +116,7 @@
 				C32A72C71D7A98AD00EA0EED /* NSTimeInterval.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		37FF80321CAD6B1F00AF4C07 = {
@@ -132,18 +138,63 @@
 		37FF803D1CAD6B1F00AF4C07 /* Ping Master */ = {
 			isa = PBXGroup;
 			children = (
+				7C2B64F51EA6CBD200E9EB73 /* Assets */,
+				37F47A091CB1D8210035FA9F /* Data Source */,
+				7C2B64F31EA6CBB200E9EB73 /* Delegates */,
 				37F6BBD71CCEB64700796042 /* Extensions */,
 				371A43331CB2127A00FCA746 /* GBPing */,
-				37F47A091CB1D8210035FA9F /* Data Source */,
-				3710E2701CB078DB00786B1D /* Settings Tab */,
-				3710E26F1CB078CC00786B1D /* Devices Tab */,
-				37FF803E1CAD6B1F00AF4C07 /* AppDelegate.swift */,
-				37FF80421CAD6B1F00AF4C07 /* Main.storyboard */,
-				37FF80451CAD6B1F00AF4C07 /* Ping Master.xcassets */,
-				37FF80471CAD6B1F00AF4C07 /* LaunchScreen.storyboard */,
-				37FF804A1CAD6B1F00AF4C07 /* Info.plist */,
+				7C2B64F21EA6CB9F00E9EB73 /* Storyboards */,
+				7C2B64F41EA6CBCA00E9EB73 /* Support */,
+				7C2B64F11EA6CB9500E9EB73 /* View Controllers */,
 			);
 			path = "Ping Master";
+			sourceTree = "<group>";
+		};
+		7C2B64F11EA6CB9500E9EB73 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3710E26F1CB078CC00786B1D /* Devices Tab */,
+				3710E2701CB078DB00786B1D /* Settings Tab */,
+			);
+			name = "View Controllers";
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7C2B64F21EA6CB9F00E9EB73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				37FF80471CAD6B1F00AF4C07 /* LaunchScreen.storyboard */,
+				37FF80421CAD6B1F00AF4C07 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7C2B64F31EA6CBB200E9EB73 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				37FF803E1CAD6B1F00AF4C07 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7C2B64F41EA6CBCA00E9EB73 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				37FF804A1CAD6B1F00AF4C07 /* Info.plist */,
+			);
+			name = Support;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7C2B64F51EA6CBD200E9EB73 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				37FF80451CAD6B1F00AF4C07 /* Ping Master.xcassets */,
+			);
+			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +291,7 @@
 				37FF80431CAD6B1F00AF4C07 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		37FF80471CAD6B1F00AF4C07 /* LaunchScreen.storyboard */ = {
@@ -248,6 +300,7 @@
 				37FF80481CAD6B1F00AF4C07 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,7 +403,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "Ping Master/Info.plist";
+				INFOPLIST_FILE = "Ping Master/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NexusHeights.Ping-Master";
@@ -369,7 +422,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "Ping Master/Info.plist";
+				INFOPLIST_FILE = "Ping Master/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NexusHeights.Ping-Master";
